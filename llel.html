@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+ <table border="1" bordercolor=red>
+  <tr>
+     <td colspan="2"> <h1 style="text-align:center; margin:0;"><b>Male</b></h1>
+          <hr>
+<table border="1" bordercolor=blue>
+<tr>
+<td> <table border="1"></table>
+  <table border="1"><!-- 파란색 첫번째 칸 시작-->
+       <tr align = "center">
+         <td colspan= "2"><b>Phenotype</b> </td>
+       <tr>
+         <td>Lutino</td>
+         <td><input id="M_lut"type="checkbox"> </td>
+       </tr>
+       <tr>
+         <td>Cinnamon</td>
+         <td><input id="M_cin"type="checkbox"> </td>
+      </tr>
+      <tr>
+        <td>Oparin</td>
+        <td><input id="M_opa"type="checkbox"> </td>
+       </tr>
+      <tr>
+        <td>whiteface</td>
+        <td><input id="M_wf"type="checkbox"> </td>
+       </tr>
+      <tr>
+        <td>pied</td>
+        <td><input id="M_pd"type="checkbox"> </td>
+      </tr>
+     </table>
+<p>
+       <script>
+         function M_check1() {
+         M_lut=document.getElementById('M_lut').checked
+         document.getElementById("M-check1").innerHTML = M_lut
+         }
+        var M_lut = ''
+
+  function M_check2() {
+         M_cin=document.getElementById('M_cin').checked
+         document.getElementById("M-check2").innerHTML = M_cin
+         }
+        var M_cin = ''
+
+      function M_check3() {
+         M_opa=document.getElementById('M_opa').checked
+         document.getElementById("M-check3").innerHTML = M_opa
+         }
+        var M_opa = ''
+</script>
+<p>
+      <button type="button" onclick=M_check1();>lutino</button>
+<span id="M-check1"> </span>
+</p>
+<p>
+      <button type="button" onclick=M_check2();>cinnamon</button>
+<span id="M-check2"> </span>
+    </p>
+    <p>
+      <button type="button" onclick=M_check3();>oparin</button>
+<span id="M-check3"> </span>
+    </p></td><!-- 파란색 첫번째 칸 끝-->
+<td> <table border="1"<!-- 파란색 두번째 칸 시작-->
+       <tr align = "center">
+         <td colspan= "2"><b>split</b> </td>
+      <tr>
+        <td>whiteface</td>
+        <td><input id="M_wf"type="checkbox"> </td>
+       </tr>
+      <tr>
+        <td>pied</td>
+        <td><input id="M_pd"type="checkbox"> </td>
+      </tr>
+     </table>
+<p>
+       <script>
+
+</script><!-- <script> 안에 whiteface, pied 체크여부-->
+<p>
+      <!--whiteface, pied 체크여부 확인-->
+    </p></td><!--파란색 두번째 칸 끝-->
+</tr>
+</table><!--노란색 칸 시작-->
+  </td>
+  <td>
+  <table border="1" width="300px" bordercolor=yellow>
+<tr>
+  <td> 3 </td>
+  <td> 4 </td>
+</tr>
+</table>
+  </td>
+  </tr>
+ </table>
